@@ -1,5 +1,5 @@
 var webpack = require("webpack");
-var CopyWebpackPlugin = require('copy-webpack-plugin');
+var path = require('path');
 
 module.exports = {
   entry: {
@@ -48,7 +48,13 @@ module.exports = {
   },
 
   resolve: {
-    modules: ['node_modules']
+    modules: ['./node_modules']
+  },
+
+  devServer: {
+    contentBase: path.join(__dirname, 'public'),
+    compress: true,
+    port: 9000
   },
 
   output: {
@@ -58,6 +64,5 @@ module.exports = {
   },
 
   plugins: [
-    new CopyWebpackPlugin([{ from: './src/index.html'} ])
   ]
 };

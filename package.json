@@ -58,7 +58,7 @@
     "webpack-dev-server": "^3.3.0"
   },
   "scripts": {
-    "start": "cd demo && webpack-cli && \"../node_modules/.bin/webpack-dev-server\" --port 4000 --content-base dist/"
+    "start": "webpack-dev-server --color"
   },
   "repository": {
     "type": "git",

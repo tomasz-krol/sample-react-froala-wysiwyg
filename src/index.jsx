@@ -4,7 +4,7 @@ import 'froala-editor/css/froala_editor.pkgd.min.css';
 import 'froala-editor/css/froala_style.css';
 import FroalaEditor from 'react-froala-wysiwyg';
 
-import 'react-froala-wysiwyg/node_modules/froala-editor/js/plugins.pkgd.min.js';
+// import 'react-froala-wysiwyg/node_modules/froala-editor/js/plugins.pkgd.min.js';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -46,6 +46,7 @@ class App extends React.Component {
   }
 }
 
-// Render Froala Editor component.
-ReactDOM.render(<App />, document.getElementById('root'));
+export default App;
 
+// Render Froala Editor component.
+// ReactDOM.render(<App />, document.getElementById('root'));
